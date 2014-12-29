@@ -58,15 +58,17 @@ if has("gui_running")
         set guifont=Bitstream_Vera_Sans_Mono:h14:cANSI
     else
         " 设定 linux 下图形界面下的字体，该字体 Fedora 7 自带
-       " set guifont=DejaVu\ LGC\ Sans\ Mono\ 14
-        set guifont=Bitstream_Vera_Sans_Mono:h14:cANSI
+        set guifont=DejaVu\ LGC\ Sans\ Mono\ 14
+        " set guifont=Bitstream_Vera_Sans_Mono:h14:cANSI
     endif
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has("gui_running")
-    colorscheme desert "or koehler
+    set background=dark
+    colorscheme solarized "or koehler
+    set showtabline=2       " 总是显示标签栏
 else
     colorscheme evening 
 endif
